@@ -1,0 +1,33 @@
+{
+  "name": "fcc.backend.imagesearch",
+  "version": "0.0.1",
+  "description": "image search abstract layer",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bael/fcc.backend.imagesearch.git"
+  },
+  "keywords": [
+    "image",
+    "search",
+    "funny",
+    "cats"
+  ],
+  "author": "d.kerner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bael/fcc.backend.imagesearch/issues"
+  },
+  "homepage": "https://github.com/Bael/fcc.backend.imagesearch#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.1",
+    "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
