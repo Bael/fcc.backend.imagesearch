@@ -4,7 +4,7 @@
   "description": "image search abstract layer",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha **/*.test.js",
     "start": "node server.js"
   },
   "repository": {
@@ -14,8 +14,7 @@
   "keywords": [
     "image",
     "search",
-    "funny",
-    "cats"
+    "freecodecamp"
   ],
   "author": "d.kerner",
   "license": "MIT",
@@ -24,10 +23,17 @@
   },
   "homepage": "https://github.com/Bael/fcc.backend.imagesearch#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "cheerio": "^1.0.0-rc.1",
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "fs": "0.0.1-security",
+    "pug": "^2.0.0-rc.2",
+    "request": "^2.81.0"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "expect": "^1.20.2",
+    "mocha": "^3.4.2",
+    "nodemon": "^1.11.0",
+    "supertest": "^3.0.0"
   }
 }

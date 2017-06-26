@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>URL Shortener description</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+	<style>
+		body {
+				margin-left: 10%;
+				margin-right: 10%;
+		}
+		article {
+			width: 100%;
+
+		}
+		form { width: inherit;	}
+		.input { margin: 0  0 auto};
+		fieldset { width: inherit;  }
+		li { line-height: 1.5 }
+	</style>
+</head>
+<body>
+	<h1>Search text description</h1>
+	<article>
+		<section>
+			<head>
+				<h3>User stories</h3>
+				<ol>
+          <li>I can get the image URLs, alt text and page urls for a set of images relating to a given search string. /api/search/:search </li>
+          <li>I can paginate through the responses by adding a offset parameter to the URL. For example /api/search/:search?offset=2 </li>
+          <li>I can get a list of the most recently submitted search strings. /api/latest/</li>
+				</ol>
+			</head>
+		</section>
+		<section>
+			<header>
+				<p>Simple test<p>
+
+			</header>
+					<form action="/test/search/" method="post">
+						<fieldset>
+							<label>Search text:</label>
+							<input type="text" class="input" name="search">
+              <label>offset to show:</label>
+              <input type="text" class="input" name="offset">
+
+              <input type="submit" value="Submit">
+
+						</fieldset>
+
+					</form>
+		</section>
+
+
+
+	</article>
+	<footer>
+		<a target="_blank" href="https://github.com/Bael/fcc.backend.imagesearch">Source code on Github.</a>
+	</footer>
+</body>
+</html>

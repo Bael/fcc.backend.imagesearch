@@ -1,0 +1,7 @@
+html
+  head
+    title= title
+  body
+    ul
+      each val in images
+        li: a(href=val.url): img(src=val.thumbnail alt=val.alt)
