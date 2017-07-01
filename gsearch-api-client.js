@@ -3,7 +3,7 @@ const request = require('request');
 module.exports.search = function(searchTerms, api_key, cx, num, page, callback) {
   // page starts with 1. start index starts with next record. So need add 1.
 
-  let start = 1 + num * (page - 1);
+  let start = Math.max(1, 1 + num * (page - 1));
 
   const url = `https://content.googleapis.com/customsearch/v1?c2coff=1&cx=${cx}&num=${num}&q=${searchTerms}&safe=medium&searchType=image&start=${start}&alt=json&key=${api_key}`
 
