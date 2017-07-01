@@ -40,22 +40,3 @@ function makeImageObject(urlJSONObject) {
   }
 
 }
-
-/*
-
-const api_key = "5d32721316e054dca98e856f44f461c0" + "trololo";
-const apy_secret="6b58e80b680680a1"
-///&api_sig=db127ebf1be43755fcf7b35361f59222
-const search_text = encodeURIComponent("funny cats");
-const per_page = 10;
-const page = 10;
-
-
-
-
-//request(url).pipe(fs.createWriteStream('doodle.png'));
-const encodedSearchText = encodeURIComponent("funny cats");
-searchPhoto(encodedSearchText, api_key, 5, 1, function(err, array) {
-  console.log(err);
-});
-*/
